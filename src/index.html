@@ -6,72 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЯsmiPie</title>
     <meta name="description" content="Пеку торты под заказ в Чебаксе и Казани." />
-
+    <link rel="stylesheet" href="css/nullify.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="icon" href="https://demon-calc.ru/favicon.ico" type="image/x-icon"> -->
-    <!-- <script type="module" src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
+    <script src="js/router.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>💚ЯsmiPie💚</h1>
-        <h2>🎂Торты🎂</h2>
-        <div class="list">
-            <div class="names">
-                <div>Ванильно-ягодный торт</div>
-                <div>Торт “Сникерс”</div>
-                <div>Торт “Красный бархат”</div>
-                <div>Щелкунчик</div>
-                <div>Бабл шам</div>
-                <div>Медовый</div>
-                <div>Наполеон</div>
-                <div>Муссовый торт “Три шоколада”</div>
-                <div>Торт “Али-Баба”</div>
-                <div>Торт “Тропик”</div>
-                <div>Торт “Марракеш”</div>
-                <div>Торт “Лесная фея”</div>
-                <div>Торт “Рафаэлло”</div>
-                <div>Морковный</div>
-                <div>Чизкейк</div>
-                <div>Чизкейк “Сникерс”</div>
-                <div>Меренговый рулет</div>
+        <div class="side">
+            <div id="baker"></div>
+            <div class="description">
+                <h2>Торты 🎂</h2>
+                <p>Здесь представлены торты без украшений. Украшенные торты можно посмотреть в разделе галерея.</p>
             </div>
-            <div class="prices">
-                <div>1600 р/кг</div>
-                <div>1600 р/кг</div>
-                <div>1600 р/кг</div>
-                <div>1750 р/кг</div>
-                <div>1750 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1750 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1600 р/кг</div>
-                <div>1700 р/кг</div>
-                <div>1900 р/кг</div>
-                <div>1200 р/кг</div>
-            </div>
+            <button id="order-btn">СДЕЛАТЬ ЗАКАЗ</button>
         </div>
-        <h2>🧁Десерты🧁</h2>
-        <div class="list">
-            <div class="names">
-                <div>Десерт “3 шоколада”</div>
-                <div>Капкейки</div>
-                <div>Трайфлы</div>
-                <div>Эклеры с кракелином</div>
-                <div>Безе, леденцы на палочке</div>
-            </div>
-            <div class="prices">
-                <div>300 р/шт</div>
-                <div>160 р/шт</div>
-                <div>250 р/шт</div>
-                <div>150 р/шт</div>
-                <div>50 р/шт</div>
-            </div>
+        <div class="main">
+            <header>
+                <h1>💚ЯsmiPie💚
+                    <div class="subtitle">Домашняя кондитерская</div>
+                </h1>
+                <nav class="menu">
+                    <a href="/" class="selected">ТОРТЫ</a>
+                    <a href="/desserts">ДЕСЕРТЫ</a>
+                    <a href="/gallery">ГАЛЕРЕЯ</a>
+                    <a href="/about">Обо мне</a>
+                </nav>
+            </header>
+            <div id="main-page"></div>
         </div>
     </div>
 </body>
