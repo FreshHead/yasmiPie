@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const routes = {
-    404: "pages/cakes.html",
-    "/": "pages/cakes.html",
+    404: "pages/main.html",
+    "/": "pages/main.html",
+    "/cakes": "pages/cakes.html",
     "/desserts": "pages/desserts.html",
-    "/gallery": "pages/gallery.html",
     "/about": "pages/about.html",
 };
 
@@ -23,6 +23,7 @@ const handleLocation = async () => {
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
+    document.getElementById("description")
 };
 
 window.onpopstate = handleLocation;

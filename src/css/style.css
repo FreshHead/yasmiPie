@@ -9,6 +9,10 @@ html {
     /* background-color: #ecd1bf; */
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -130,12 +134,16 @@ ul {
     justify-content: center;
 }
 
+p {
+    margin-top: 0.5rem;
+}
+
 nav a {
-    width: 170px;
+    width: 200px;
     margin-right: 1rem;
 }
 
-a {
+.btn {
     padding: 5px 20px;
 
     background-color: #FB7676;
@@ -191,4 +199,8 @@ a.selected {
     position: absolute;
     bottom: 0.5rem;
     right: 1rem;
+}
+
+.hidden {
+    visibility: hidden;
 }
