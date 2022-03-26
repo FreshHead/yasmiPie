@@ -26,16 +26,6 @@ body {
 .container {
     width: 1440px;
     display: flex;
-    /*👉 display: grid;
-    grid-template-areas:
-        "baker header"
-        "baker list"
-        "description list"
-        "order-btn list";
-    grid-template-columns: 400px 920px;
-    grid-template-rows: 240px 68px 145px;
-    grid-gap: 10px;
-👈*/
     padding: 1rem;
 }
 
@@ -158,7 +148,6 @@ nav a {
 
 a.selected {
     background-color: #d86464;
-    /* border: solid 4px white; */
 }
 
 .list {
@@ -176,11 +165,6 @@ a.selected {
     width: 280px;
     height: 400px;
 
-    /*👉display: flex;
-    flex-direction: column;
-    width: 300px;
-    padding: 1rem 0.3rem 0.3rem;
-    👈*/
     padding: 1rem;
     margin-top: 1rem;
 
@@ -203,4 +187,45 @@ a.selected {
 
 .hidden {
     visibility: hidden;
+}
+
+#slider {
+    position: relative;
+}
+
+#gallery-image {
+    height: 600px;
+    width: 1000px;
+    background-image: url(../img/gallery/img_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    margin-top: 1rem;
+}
+
+
+#controls {
+    position: absolute;
+    top: 500px;
+
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+    /* left: 500px; */
+}
+
+.arrow {
+    opacity: 0.3;
+    transition: all .2s ease-in-out 0s;
+}
+
+.mirror {
+    transform: scale(-1, 1);
+
+}
+
+.arrow:hover {
+    opacity: 0.9;
 }
